@@ -8,7 +8,6 @@ namespace Professional_Inventory_Manager
         public LogIn()
         {
             InitializeComponent();
-            passwordTextBox.PasswordChar = '*';
         }
 
         private void logInButton_Click(object sender, EventArgs e)

@@ -54,6 +54,7 @@
             this.passwordTextBox.PlaceholderText = "Password";
             this.passwordTextBox.Size = new System.Drawing.Size(449, 39);
             this.passwordTextBox.TabIndex = 1;
+            this.passwordTextBox.PasswordChar = '*';
             // 
             // label1
             // 
