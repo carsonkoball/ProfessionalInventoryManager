@@ -1,0 +1,11 @@
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\bin\Debug\Professional Inventory Manager.exe.config
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\bin\Debug\Professional Inventory Manager.exe
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\bin\Debug\Professional Inventory Manager.pdb
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\obj\Debug\Professional Inventory Manager.csproj.AssemblyReference.cache
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\obj\Debug\Professional Inventory Manager.csproj.SuggestedBindingRedirects.cache
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\obj\Debug\Professional_Inventory_Manager.Properties.Resources.resources
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\obj\Debug\Professional Inventory Manager.csproj.GenerateResource.cache
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\obj\Debug\Professional Inventory Manager.csproj.CoreCompileInputs.cache
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\obj\Debug\Professional Inventory Manager.exe
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\obj\Debug\Professional Inventory Manager.pdb
+C:\Users\DSU Student\Desktop\Final\Professional Inventory Manager\Professional Inventory Manager\obj\Debug\Professional_Inventory_Manager.Login.resources
