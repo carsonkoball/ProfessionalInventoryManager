@@ -51,9 +51,9 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -184,20 +184,20 @@
             // textBox1
             // 
             this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(312, 60);
+            this.textBox1.Location = new System.Drawing.Point(391, 63);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(267, 23);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Item Name/ID...";
+            this.textBox1.Text = "Item ID/Item Name...";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(234, 64);
+            this.label1.Location = new System.Drawing.Point(234, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 15);
+            this.label1.Size = new System.Drawing.Size(151, 15);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Item Search:";
+            this.label1.Text = "Search Item by ID or Name:";
             // 
             // toolStrip1
             // 
@@ -237,6 +237,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(54, 22);
             this.toolStripButton1.Text = "Log Out";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // textBox3
             // 
@@ -274,20 +275,6 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Add New Item Or Change Current Item:";
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(585, 60);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(93, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Search";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button1_Click);
-            // 
             // textBox6
             // 
             this.textBox6.ForeColor = System.Drawing.Color.Gray;
@@ -307,14 +294,28 @@
             this.label3.Text = "Double-click row header to select an item. The item information will be shown in " +
     "the boxes below.";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(664, 63);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(93, 23);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Search Item";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 630);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -365,8 +366,8 @@
         private DataGridViewTextBoxColumn Column8;
         private DataGridViewTextBoxColumn Column9;
         private DataGridViewTextBoxColumn Column10;
-        private Button button4;
         private TextBox textBox6;
         private Label label3;
+        private Button button4;
     }
 }

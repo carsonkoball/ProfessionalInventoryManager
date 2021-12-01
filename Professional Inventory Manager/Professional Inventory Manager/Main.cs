@@ -44,13 +44,33 @@ namespace Professional_Inventory_Manager
             }
         }
 
-        private bool IfItemExists(SqlConnection con, string itemID)
+        private bool IfItemExistsID(SqlConnection con, string itemID)
         {
-            //checks if an item exists in the system
+            //checks if an item id exists in the system
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Dingo\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\DB\Data.mdf"";Integrated Security=True;Connect Timeout=30;";
             using (con = new SqlConnection(connectionString))
             {
                 SqlDataAdapter sda = new SqlDataAdapter("Select 1 From [Item] WHERE [ItemID] = '" + itemID + "'", con); //Select 1 checks if it's there or not
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+        private bool IfItemExistsName(SqlConnection con, string itemName)
+        {
+            //checks if an item name exists in the system
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Dingo\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\DB\Data.mdf"";Integrated Security=True;Connect Timeout=30;";
+            using (con = new SqlConnection(connectionString))
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("Select 1 From [Item] WHERE [ItemName] = '" + itemName + "'", con); //Select 1 checks if it's there or not
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 if (dt.Rows.Count > 0)
@@ -121,7 +141,7 @@ namespace Professional_Inventory_Manager
                 var sqlQuery = "";
 
                 //delete items
-                if (IfItemExists(con, textBox2.Text))
+                if (IfItemExistsID(con, textBox2.Text))
                 {
                     con.Open();
                     //this item does exist, delete
@@ -153,7 +173,7 @@ namespace Professional_Inventory_Manager
                 var sqlQuery = "";
 
                 //update items
-                if (IfItemExists(con, textBox2.Text))
+                if (IfItemExistsID(con, textBox2.Text))
                 {
                     //this item does exist, update
                     sqlQuery = @"UPDATE [Item] SET [ItemName] = '" + textBox3.Text + "' ,[ItemQuantity] = '" + textBox4.Text + "' ,[ItemPrice] = '" + textBox5.Text + "' ,[ItemShippingDate] = '" + textBox6.Text + "' WHERE [ItemID] = '" + textBox2.Text + "'";
@@ -177,6 +197,63 @@ namespace Professional_Inventory_Manager
 
                 //read in table data
                 LoadData();
+            }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            //shows log-in screen and closes main form
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Dingo\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\DB\Data.mdf"";Integrated Security=True;Connect Timeout=30;";
+            SqlConnection con;
+            using (con = new SqlConnection(connectionString))
+            {
+                con.Open();
+
+                this.Hide();
+                LogIn logIn = new LogIn();
+                logIn.Show();
+
+                con.Close();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //search for item in the table using item name or ID
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Dingo\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\DB\Data.mdf"";Integrated Security=True;Connect Timeout=30;";
+            SqlConnection con;
+            using (con = new SqlConnection(connectionString))
+            {
+                //check if item record exists
+                if (IfItemExistsID(con, textBox1.Text))
+                {
+                    con.Open();
+                    //this item does exist, add to text boxes
+                    textBox2.Text = dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
+                    textBox3.Text = dataGridView2.SelectedRows[0].Cells[1].Value.ToString();
+                    textBox4.Text = dataGridView2.SelectedRows[0].Cells[2].Value.ToString();
+                    textBox5.Text = dataGridView2.SelectedRows[0].Cells[3].Value.ToString();
+                    textBox6.Text = dataGridView2.SelectedRows[0].Cells[4].Value.ToString();
+                    con.Close();
+                }
+//                else if (IfItemExistsName(con, textBox1.Text))
+//                {
+//                    con.Open();
+//                    //this item does exist, add to text boxes
+//                    textBox2.Text = dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
+//                    textBox3.Text = dataGridView2.SelectedRows[0].Cells[1].Value.ToString();
+//                    textBox4.Text = dataGridView2.SelectedRows[0].Cells[2].Value.ToString();
+//                    textBox5.Text = dataGridView2.SelectedRows[0].Cells[3].Value.ToString();
+//                    textBox6.Text = dataGridView2.SelectedRows[0].Cells[4].Value.ToString();
+//                    con.Close();
+//                }
+                else
+                {
+                    //this item doesn't exist, error message
+                    MessageBox.Show("This item does not exist.");
+                }
+
+                con.Close();
             }
         }
     }

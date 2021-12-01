@@ -13,7 +13,7 @@ namespace Professional_Inventory_Manager
         private void logInButton_Click(object sender, EventArgs e)
         {
             // Set up connection variables
-            String connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DSU Student\Desktop\Software Engineering Final\Professional Inventory Manager\Professional Inventory Manager\DB\Data.mdf"";Integrated Security=True;Connect Timeout=30;";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Dingo\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\DB\Data.mdf"";Integrated Security=True;Connect Timeout=30;";
             SqlConnection conn;
 
             using (conn = new SqlConnection(connectionString))
@@ -37,6 +37,12 @@ namespace Professional_Inventory_Manager
                 }
                 conn.Close();
             }      
+        }
+
+        private void LogIn_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //closes the program when "x" button is used
+            Application.Exit();
         }
     }
 }

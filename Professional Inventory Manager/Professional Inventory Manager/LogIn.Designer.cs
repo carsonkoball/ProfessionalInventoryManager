@@ -40,29 +40,31 @@
             // usernameTextBox
             // 
             this.usernameTextBox.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.usernameTextBox.Location = new System.Drawing.Point(68, 169);
+            this.usernameTextBox.Location = new System.Drawing.Point(60, 127);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.PlaceholderText = "Username";
-            this.usernameTextBox.Size = new System.Drawing.Size(449, 39);
+            this.usernameTextBox.Size = new System.Drawing.Size(393, 32);
             this.usernameTextBox.TabIndex = 0;
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.passwordTextBox.Location = new System.Drawing.Point(68, 268);
+            this.passwordTextBox.Location = new System.Drawing.Point(60, 201);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.PlaceholderText = "Password";
-            this.passwordTextBox.Size = new System.Drawing.Size(449, 39);
-            this.passwordTextBox.TabIndex = 1;
             this.passwordTextBox.PasswordChar = '*';
+            this.passwordTextBox.PlaceholderText = "Password";
+            this.passwordTextBox.Size = new System.Drawing.Size(393, 32);
+            this.passwordTextBox.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(68, 143);
+            this.label1.Location = new System.Drawing.Point(60, 107);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 23);
+            this.label1.Size = new System.Drawing.Size(74, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Username:";
             // 
@@ -70,18 +72,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(68, 242);
+            this.label2.Location = new System.Drawing.Point(60, 182);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 23);
+            this.label2.Size = new System.Drawing.Size(70, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password:";
             // 
             // logInButton
             // 
             this.logInButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.logInButton.Location = new System.Drawing.Point(413, 357);
+            this.logInButton.Location = new System.Drawing.Point(361, 268);
+            this.logInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logInButton.Name = "logInButton";
-            this.logInButton.Size = new System.Drawing.Size(104, 39);
+            this.logInButton.Size = new System.Drawing.Size(91, 29);
             this.logInButton.TabIndex = 4;
             this.logInButton.Text = "Log In";
             this.logInButton.UseVisualStyleBackColor = true;
@@ -92,9 +95,9 @@
             this.invalidCredentialsLabel.AutoSize = true;
             this.invalidCredentialsLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.invalidCredentialsLabel.ForeColor = System.Drawing.Color.Red;
-            this.invalidCredentialsLabel.Location = new System.Drawing.Point(68, 362);
+            this.invalidCredentialsLabel.Location = new System.Drawing.Point(60, 242);
             this.invalidCredentialsLabel.Name = "invalidCredentialsLabel";
-            this.invalidCredentialsLabel.Size = new System.Drawing.Size(172, 28);
+            this.invalidCredentialsLabel.Size = new System.Drawing.Size(138, 21);
             this.invalidCredentialsLabel.TabIndex = 5;
             this.invalidCredentialsLabel.Text = "Invalid Credentials";
             this.invalidCredentialsLabel.Visible = false;
@@ -103,17 +106,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(68, 56);
+            this.label3.Location = new System.Drawing.Point(60, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(357, 31);
+            this.label3.Size = new System.Drawing.Size(299, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Professional Inventory Manager";
             // 
             // LogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 486);
+            this.ClientSize = new System.Drawing.Size(522, 364);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.invalidCredentialsLabel);
             this.Controls.Add(this.logInButton);
@@ -121,8 +124,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.usernameTextBox);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LogIn";
             this.Text = "Professional Inventory Manager | Log In";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LogIn_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
