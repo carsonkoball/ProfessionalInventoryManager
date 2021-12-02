@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Professional Inventory Manager",
+    "\\Professional Inventory Manager\\Professional Inventory Manager"
   ],
-  "SelectedNode": "\\Professional Inventory Manager.sln",
+  "SelectedNode": "\\Professional Inventory Manager\\Professional Inventory Manager\\Professional Inventory Manager.csproj",
   "PreviewInSolutionExplorer": false
 }

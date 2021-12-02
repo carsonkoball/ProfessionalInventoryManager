@@ -460,11 +460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DSU Student\\Desktop\\Software Engineering Final\\Professional Inventory Manager\\Professional Inventory Manager\\Professional Inventory Manager.csproj",
+      "projectUniqueName": "C:\\Users\\DSU Student\\Source\\Repos\\ProfessionalInventoryManager\\Professional Inventory Manager\\Professional Inventory Manager\\Professional Inventory Manager.csproj",
       "projectName": "Professional Inventory Manager",
-      "projectPath": "C:\\Users\\DSU Student\\Desktop\\Software Engineering Final\\Professional Inventory Manager\\Professional Inventory Manager\\Professional Inventory Manager.csproj",
+      "projectPath": "C:\\Users\\DSU Student\\Source\\Repos\\ProfessionalInventoryManager\\Professional Inventory Manager\\Professional Inventory Manager\\Professional Inventory Manager.csproj",
       "packagesPath": "C:\\Users\\DSU Student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DSU Student\\Desktop\\Software Engineering Final\\Professional Inventory Manager\\Professional Inventory Manager\\obj\\",
+      "outputPath": "C:\\Users\\DSU Student\\Source\\Repos\\ProfessionalInventoryManager\\Professional Inventory Manager\\Professional Inventory Manager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
