@@ -9,11 +9,20 @@ namespace Professional_Inventory_Manager
         {
             InitializeComponent();
         }
+        private string getConnectionString()
+        {
+            string connectionString = AppDomain.CurrentDomain.BaseDirectory.ToString();
+            connectionString = connectionString.Substring(0, connectionString.Length - 25);
+            connectionString = connectionString + @"DB\Data.mdf";
+            connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = " + connectionString + @"; Integrated Security = True; Connect Timeout = 30;";
+
+            return connectionString;
+        }
 
         private void logInButton_Click(object sender, EventArgs e)
         {
             // Set up connection variables
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\DB\Data.mdf"";Integrated Security=True;Connect Timeout=30";
+            string connectionString = getConnectionString();
             SqlConnection conn;
 
             using (conn = new SqlConnection(connectionString))
