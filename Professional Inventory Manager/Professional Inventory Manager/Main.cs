@@ -17,21 +17,19 @@ namespace Professional_Inventory_Manager
         {
             InitializeComponent();
         }
-        private string getConnectionString()
-        {
-            string connectionString = AppDomain.CurrentDomain.BaseDirectory.ToString();
-            connectionString = connectionString.Substring(0, connectionString.Length - 25);
-            connectionString = connectionString + @"DB\Data.mdf";
-            connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = " + connectionString + @"; Integrated Security = True; Connect Timeout = 30;";
 
-            return connectionString;
+        private string connectionstring = string.Empty;
+        public string connectionString
+        {
+            get { return connectionstring; }
+            set { connectionstring = value; }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //Add Item Button
-            string connectionString = getConnectionString(); 
             SqlConnection con;
+
             //insert logic
             using (con = new SqlConnection(connectionString))
             {
@@ -42,11 +40,19 @@ namespace Professional_Inventory_Manager
                         ,[ItemName]
                         ,[ItemQuantity]
                        ,[ItemPrice]
-                       ,[ItemShippingDate])
+                       ,[ItemShippingDate]
+                        ,[InventorySpace])
                         VALUES
-                       ('" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + textBox5.Text + "', '" + textBox6.Text + "')", con);
+                       ('" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + textBox5.Text + "', '" + textBox6.Text + "', '" + textBox7.Text + "')", con);
                 cmd.ExecuteNonQuery();
                 con.Close();
+
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox5.Text = "";
+                textBox6.Text = "";
+                textBox7.Text = "";
 
                 //read in table data
                 LoadData();
@@ -56,7 +62,7 @@ namespace Professional_Inventory_Manager
         private bool IfItemExistsID(SqlConnection con, string itemID)
         {
             //checks if an item id exists in the system
-            string connectionString = getConnectionString(); 
+           
             using (con = new SqlConnection(connectionString))
             {
                 SqlDataAdapter sda = new SqlDataAdapter("Select 1 From [Item] WHERE [ItemID] = '" + itemID + "'", con); //Select 1 checks if it's there or not
@@ -76,7 +82,6 @@ namespace Professional_Inventory_Manager
         private bool IfItemExistsName(SqlConnection con, string itemName)
         {
             //checks if an item name exists in the system
-            string connectionString = getConnectionString(); 
             using (con = new SqlConnection(connectionString))
             {
                 SqlDataAdapter sda = new SqlDataAdapter("Select 1 From [Item] WHERE [ItemName] = '" + itemName + "'", con); //Select 1 checks if it's there or not
@@ -96,8 +101,8 @@ namespace Professional_Inventory_Manager
         public void LoadData()
         {
             //display all inventory spaces available and all items from the first inventory space (the selected one)
-            string connectionString = getConnectionString(); 
             SqlConnection con;
+
             using (con = new SqlConnection(connectionString))
             {
                 SqlDataAdapter sda = new SqlDataAdapter("Select Distinct InventorySpace from [dbo].[Item]", con);
@@ -155,8 +160,8 @@ namespace Professional_Inventory_Manager
         private void button3_Click(object sender, EventArgs e)
         {
             //delete selected item from the table
-            string connectionString = getConnectionString(); 
             SqlConnection con;
+
             using (con = new SqlConnection(connectionString))
             {
                 //check if item record exists
@@ -186,8 +191,8 @@ namespace Professional_Inventory_Manager
         private void button2_Click(object sender, EventArgs e)
         {
             //update or change the current item's information
-            string connectionString = getConnectionString(); 
             SqlConnection con;
+
             using (con = new SqlConnection(connectionString))
             {
                 con.Open();
@@ -226,8 +231,8 @@ namespace Professional_Inventory_Manager
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             //shows log-in screen and closes main form
-            string connectionString = getConnectionString(); 
             SqlConnection con;
+
             using (con = new SqlConnection(connectionString))
             {
                 con.Open();
@@ -243,8 +248,8 @@ namespace Professional_Inventory_Manager
         private void button4_Click(object sender, EventArgs e)
         {
             //search for item in the table using item name or ID
-            string connectionString = getConnectionString(); 
             SqlConnection con;
+
             using (con = new SqlConnection(connectionString))
             {
                 //check if input into textBox1 is an int
@@ -369,8 +374,8 @@ namespace Professional_Inventory_Manager
         private void dataGridView1_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
             //double-clicking the item inventory inventory grid will show all items from that inventory space in the item grid
-            string connectionString = getConnectionString(); 
             SqlConnection con;
+
             using (con = new SqlConnection(connectionString))
             {
                 SqlDataAdapter sda = new SqlDataAdapter("Select * From [dbo].[Item] Where InventorySpace='" + dataGridView1.SelectedCells[0].Value.ToString() + "'", con);
