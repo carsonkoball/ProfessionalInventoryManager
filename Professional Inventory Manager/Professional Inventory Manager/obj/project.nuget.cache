@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "or68TnlaLaRMQ0scqHHXRUoP+yRSUf6a5xb8AhJAwRUAtoMPDJzgAvRkP6qYKu5krAU2PkYzR07PX+8c5qNEMw==",
+  "dgSpecHash": "ZBHVwg60DLxcVGAqoH7JCosQGEqunANDxUyvEdcyYsJc7D1hNcZy0ofdfIlm5+YYUGVXTvs4ekTOrxfsEqCpIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DSU Student\\Desktop\\Software Engineering Final\\Professional Inventory Manager\\Professional Inventory Manager\\Professional Inventory Manager.csproj",
+  "projectFilePath": "C:\\Users\\DSU Student\\source\\repos\\ProfessionalInventoryManager\\Professional Inventory Manager\\Professional Inventory Manager\\Professional Inventory Manager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DSU Student\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\DSU Student\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -1,0 +1,25 @@
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\Professional Inventory Manager.exe
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\Professional Inventory Manager.deps.json
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\Professional Inventory Manager.runtimeconfig.json
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\Professional Inventory Manager.dll
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\ref\Professional Inventory Manager.dll
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\Professional Inventory Manager.pdb
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\bin\Release\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional Inventory Manager.csproj.AssemblyReference.cache
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional_Inventory_Manager.LogIn.resources
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional_Inventory_Manager.Main.resources
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional Inventory Manager.csproj.GenerateResource.cache
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional Inventory Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional Inventory Manager.AssemblyInfoInputs.cache
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional Inventory Manager.AssemblyInfo.cs
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional Inventory Manager.csproj.CoreCompileInputs.cache
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional Inventory Manager.csproj.CopyComplete
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional Inventory Manager.dll
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\ref\Professional Inventory Manager.dll
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional Inventory Manager.pdb
+C:\Users\DSU Student\source\repos\ProfessionalInventoryManager\Professional Inventory Manager\Professional Inventory Manager\obj\Release\net6.0-windows\Professional Inventory Manager.genruntimeconfig.cache
